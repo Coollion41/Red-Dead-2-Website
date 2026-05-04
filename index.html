@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dead Redemption 2</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/rdr2.svg">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/pagetwo.html">Storyline</a></li>
+        <li><a href="pages/characters.html">Characters</a></li>
+        <li><a href="pages/pagefour.html">Epilogue</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <img src="assets/images/homepageimg1.png" alt="RDR2 background">
+
+    <div class="overlay-text">
+        Red Dead Redempti<span class="cylinder-wrapper">
+            <img src="assets/images/cylnder.png" class="cylinder">
+        </span>n II
+    </div>
+</header>
+
+<!-- SOUND -->
+<audio id="revolverSound" src="assets/sounds/revolver.mp3"></audio>
+
+<!-- Java script -->
+<script>
+const cylinder = document.querySelector('.cylinder');
+const sound = document.getElementById('revolverSound');
+
+cylinder.addEventListener('click', () => {
+    sound.currentTime = 0;
+    sound.play();
+    cylinder.classList.remove('spin');
+    void cylinder.offsetWidth; 
+    cylinder.classList.add('spin');
+});
+</script>
+
+<section class="about">
+    <h2 class="about-title">About the Game</h2>
+
+    <p class="about-text">
+        Red Dead Redemption 2 is an open-world action-adventure game developed by Rockstar Games. 
+        Released in 2018, it takes place in a brutal and fading American frontier, where lawlessness 
+        still rules the land. You play as Arthur Morgan, an outlaw forced to survive as the Wild West 
+        collapses around him. With cinematic storytelling, unmatched realism, and a living world, 
+        the game delivers one of the most immersive experiences ever created.
+    </p>
+</section>
+
+
+
+
+</body>
+</html>
